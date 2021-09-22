@@ -7,13 +7,16 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.0.5"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
   "devDependencies": {
     "@asigloo/prettier-config": "^0.2.0",
     "@iconify/json": "^1.1.387",
-    "@vitejs/plugin-vue": "^1.3.0",
-    "@vue/compiler-sfc": "^3.0.5",
+    "@types/chrome": "^0.0.157",
+    "@types/react": "^17.0.24",
+    "@types/react-dom": "^17.0.9",
+    "@vitejs/plugin-react-refresh": "^1.3.6",
     "autoprefixer": "^10.3.1",
     "postcss": "^8.3.6",
     "tailwindcss": "^2.2.7",
