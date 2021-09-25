@@ -1,8 +1,4 @@
-![repository-banner.png](https://res.cloudinary.com/alvarosaburido/image/upload/v1612193118/as-portfolio/Repo_Banner_kexozw.png)
-
-# Vite + Vue Chrome Extension Example
-
-> Repo for the video [Create a Chrome Extension with Vite + Vue](https://youtu.be/E_189013gCM)
+# Vite + React + TS Chrome Extension Example
 
 ## Build Setup
 
