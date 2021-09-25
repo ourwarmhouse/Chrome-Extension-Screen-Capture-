@@ -1,16 +1,17 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 
 const Popup = () => {
-    const [currentTab, setCurrentTab] = useState({})
+    const [currentTab, setCurrentTab] = useState<Tab>({
+        favIconUrl: '',
+        title: 'loading'
+    })
 
     useEffect(() => {
         chrome.runtime.sendMessage({ type: "POPUP_INIT" }, async tab => {
-            const t = await tab;
-            console.log(t)
-            setCurrentTab(t)
+            setCurrentTab(await tab)
         });
     }, [])
-    
+
     return <div className="overlay">
         <div className="popup">
             <div className="bg-red-200 text-green-900">
@@ -22,3 +23,8 @@ const Popup = () => {
 }
 
 export default Popup
+
+interface Tab {
+    favIconUrl: string,
+    title: string,
+}

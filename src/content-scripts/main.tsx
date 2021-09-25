@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import ReactDOM from "react-dom"
 import Popup from "./Popup"
 import "@/styles/main.css"
-console.log("HI FROM MAIN.jsx")
+
 const MOUNT_EL_ID = "as-awesome-extension";
 
 let mountEl = document.getElementById(MOUNT_EL_ID);
